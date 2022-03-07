@@ -1,0 +1,13 @@
+[
+  {
+    "id": "1",
+    "username": "mauvalente",
+    "password": "39239827",
+    "is_enabled": true,
+    "register_date": "01/10/2021",
+    "name": "Mauricio",
+    "surname": "Valente",
+    "email": "mau.valente@gmail.com",
+    "phone": "(48)99995555"
+  }
+]

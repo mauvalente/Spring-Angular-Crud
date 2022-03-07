@@ -24,3 +24,13 @@ Creating modules and routers
 ```bash
 $ ng g m users --routing
 ```
+
+Creating Interfaces in Angualr
+```bash
+$ ng g interface users/model/user
+```
+
+Creating Service in Angular
+```bash
+$ ng g s users/services/users
+```
