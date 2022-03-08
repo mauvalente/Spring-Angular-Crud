@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  spring-crud:
+    build: .
+    volumes:
+      - .:/home/spring/app/back
+    ports:
+      - 8080:8080
