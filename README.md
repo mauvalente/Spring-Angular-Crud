@@ -1,8 +1,9 @@
 # Spring / Angular / Crud Project
 
+## Angular : Frond-End
 To start Docker
 ```bash
-$ docker build 
+$ docker build -t angular-crud -f Dockerfile front
 ```
 
 Install Angular Cli and creating application
@@ -34,3 +35,11 @@ Creating Service in Angular
 ```bash
 $ ng g s users/services/users
 ```
+
+
+## Spring : Back-End
+```bash
+$ docker build -t spring-crud -f Dockerfile .
+$ docker-compose run spring-crud sh
+$ mvn install
+$ mvn spring-boot:run
