@@ -4,6 +4,6 @@ services:
   angular-crud:
     build: .
     volumes:
-      - .:/home/node/app
+      - .:/home/node/app/front
     ports:
       - 4201:4200

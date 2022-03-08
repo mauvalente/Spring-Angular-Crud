@@ -4,7 +4,7 @@ RUN npm install -g @angular/cli@13.0.2
 
 USER node
 
-WORKDIR /home/node/app/front
+WORKDIR /home/node/app/front/
 
 # COPY package.json .
 # COPY package.lock .

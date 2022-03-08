@@ -3,7 +3,7 @@
 ## Angular : Frond-End
 To start Docker
 ```bash
-$ docker build -t angular-crud -f Dockerfile front
+$ docker build -t angular-crud -f Dockerfile .
 ```
 
 Install Angular Cli and creating application
