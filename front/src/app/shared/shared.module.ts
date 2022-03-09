@@ -6,7 +6,6 @@ import { EnabledPipe } from './pipes/enabled.pipe';
 import { PasswordPipe } from './pipes/password.pipe';
 
 
-
 @NgModule({
   declarations: [
     ErrorDialogComponent,

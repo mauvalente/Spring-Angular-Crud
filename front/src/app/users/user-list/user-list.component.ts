@@ -8,17 +8,18 @@ import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/err
 
 @Component({
   selector: 'app-users',
-  templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss']
+  templateUrl: './user-list.component.html',
+  styleUrls: ['./user-list.component.scss']
 })
-export class UsersComponent implements OnInit {
+export class UserListComponent implements OnInit {
 
   users$: Observable<User[]>;
 
   displayedColumns = [
     'id', 'username', 'password',
-    'is_enabled', 'register_date',
-    'name', 'surname', 'email', 'phone'
+    'enabled', 'register_date',
+    'name', 'surname', 'email', 'phone',
+    'actions'
   ];
 
   constructor(

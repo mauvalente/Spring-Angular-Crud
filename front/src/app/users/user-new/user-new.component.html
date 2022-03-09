@@ -1,0 +1,54 @@
+<mat-card>
+  <mat-toolbar color="primary">
+    {{(user && user.id)?'Update User':'Register User'}}
+  </mat-toolbar>
+
+  <div class="form-container">
+    <form class="form-default" *ngIf="formGroup" [formGroup]="formGroup" (ngSubmit)="formGroup.valid && onSubmit()"
+      novalidate>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Username" formControlName="username" required autocomplete="off" />
+          <mat-error>Required field</mat-error>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" />
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Surname</mat-label>
+          <input matInput formControlName="surname" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input matInput type="email" formControlName="email" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Phone</mat-label>
+          <input matInput type="tel" formControlName="phone" />
+        </mat-form-field>
+      </p>
+
+      <div>
+        <button type="button" mat-raised-button routerLink="/users">Cancel</button>
+        <button mat-raised-button color="primary" [disabled]="!formGroup.valid">Save</button>
+      </div>
+    </form>
+  </div>
+</mat-card>
