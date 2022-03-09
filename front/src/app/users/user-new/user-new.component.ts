@@ -29,12 +29,12 @@ export class UserNewComponent implements OnInit {
 
     this.formGroup = this.formBuilder.group({
       id: [(this.user && this.user.id)?this.user.id:null],
-      username: [this.user.username, Validators.required],
-      password: [this.user.password, Validators.required],
-      name: [this.user.name, Validators.required],
-      surname: [this.user.surname, Validators.required],
-      email: [this.user.email, Validators.email],
-      phone: [this.user.phone, Validators.required]
+      username: [(this.user && this.user.username)?this.user.username:null, Validators.required],
+      password: [(this.user && this.user.password)?this.user.password:null, Validators.required],
+      name: [(this.user && this.user.name)?this.user.name:null, Validators.required],
+      surname: [(this.user && this.user.surname)?this.user.surname:null, Validators.required],
+      email: [(this.user && this.user.email)?this.user.email:null, Validators.email],
+      phone: [(this.user && this.user.phone)?this.user.phone:null, Validators.required]
     });
   }
 
