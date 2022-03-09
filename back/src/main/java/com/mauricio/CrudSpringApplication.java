@@ -1,5 +1,7 @@
 package com.mauricio;
 
+import java.util.Date;
+
 import com.mauricio.model.User;
 import com.mauricio.repository.UserRepository;
 
@@ -26,6 +28,9 @@ public class CrudSpringApplication {
 			user.setUsername("mauricio");
 			user.setPassword("teste123");
 			user.setEmail("mau.valente@gmail.com");
+			user.setEnabled(true);
+			user.setRegisterDate( new Date() );
+			user.setPhone("48 99900-5555");
 
 			userRepository.save(user);
 		};

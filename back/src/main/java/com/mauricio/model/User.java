@@ -28,7 +28,7 @@ public class User {
     private String password;
 
     @Column(name = "is_enabled")
-    private boolean isEnabled;
+    private boolean enabled;
 
     @Column(name = "register_date")
     private Date registerDate;
