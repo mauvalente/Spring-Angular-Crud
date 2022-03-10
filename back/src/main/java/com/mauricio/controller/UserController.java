@@ -55,10 +55,11 @@ public class UserController {
         return userBusiness.update(user);
     }
 
-    @DeleteMapping
+    @DeleteMapping(value = "{id}")
     @CrossOrigin(origins = "http://localhost:4201")
-    public void delete(@RequestBody Long id)
+    public boolean delete(@PathVariable("id") Long id)
     {
         userBusiness.delete(id);
+        return true;
     }
 }
