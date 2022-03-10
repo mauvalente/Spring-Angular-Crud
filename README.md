@@ -15,6 +15,7 @@ $ docker-compose up
 ## Spring : Back-End
 To build Docker
 ```bash
+$ cd back
 $ docker build -t spring-crud -f Dockerfile .
 ```
 To run Spring Docker End
