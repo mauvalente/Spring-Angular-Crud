@@ -1,7 +1,7 @@
 # Spring / Angular / Crud Project
 
 ## Angular : Frond-End
-To start Docker
+To build Docker
 ```bash
 $ cd front
 $ docker build -t angular-crud -f Dockerfile .
@@ -13,6 +13,11 @@ $ docker-compose up
 ```
 
 ## Spring : Back-End
+To build Docker
 ```bash
 $ docker build -t spring-crud -f Dockerfile .
+```
+To run Spring Docker End
+```bash
 $ docker-compose up
+```
